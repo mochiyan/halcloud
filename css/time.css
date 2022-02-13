@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* commoncss height変更*/
+div#wrap{
+  height: 1000px;
+}
+.news{
+  font-size: 1.5em;/* フォントサイズ */
+  font-weight: bold;/* フォント太さ */
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+  position: relative;
+ font-family: 'Noto Serif JP', serif;
+  color:#1e7aca;/* フォント色 */
+  }
+  
+  .news:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, #1e7aca 0%,rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  }
+  
+.biz-hour {
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 414px) {
+  .biz-hour {/* スマホのときだけ親要素いっぱいに */
+    width: 100%;
+
+  }
+}
+.biz-hour th, .biz-hour td {
+  padding: 6px;
+  text-align: center;
+  /* 枠線。色を変えたい時は#ff6680というところをお好みで */
+  border: 1px solid #ff6680;
+}
+
+/* 上段。backgroundを書き換えれば背景色が変わります。 */
+.biz-hour th {
+  background: pink;
+  font-weight: normal;
+}
+
+/* 土曜日の文字色 */
+.biz-hour th.sat {
+  color: #3db2da;
+}
+
+/* 日曜日の文字色 */
+.biz-hour th.sun {
+  color: #e66a6a;
+}

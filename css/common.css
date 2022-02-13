@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+
+header{
+  height: 80px;
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+  padding: 0 10px 0 10px;
+  background-image: url(../images/halcloudver1.png);
+}
+
+
+body{
+  /*background-image: url(../images/wood.jpg);*/
+  background-color:#d1d1e9; 
+}
+
+div#wrap{
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto 0 auto;
+  padding: 0 10px 0 10px;
+  /*box-sizing: border-box;　padding borderを内側に収める*/
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+main{
+  padding: 50px 0 100px 0;
+  text-align: center;
+}
+main section{
+  margin: 50px 0 50px 0;
+}
+main section:last-child{
+  margin: 0 0 0 0;
+}
+  main section h2{
+    margin: 0 0 20px 0;
+    font-size: 1.4rem;
+  }
+  main section p{
+    line-height: 1.6rem;
+  }
+
+nav{
+border-bottom: 2px solid #ccc;
+}
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 5px;
+width: 85%;
+text-align: center;
+}
+nav ul li{
+display: table-cell;
+min-width: 50px;
+border-right: 1px solid #ccc;
+}
+nav ul li:first-child{
+border-left: 1px solid #ccc;
+}
+nav ul li a{
+display: block;
+width: 100%;
+padding: 10px 0;
+text-decoration: none;
+color: #aaa;
+}
+nav ul li a:hover{
+background-color:#F8E750;
+border-bottom: 5px solid #F8E750;
+}
+nav ul li.current{
+font-weight: bold;
+}
+nav ul li.current a{
+border-bottom: 5px solid #00B0F0;
+color: #00B0F0;
+}

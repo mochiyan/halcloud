@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+h2 {
+  position: relative;
+  padding: 1rem 2rem calc(1rem + 10px);
+  background: #b2afe6;
+}
+
+.news{
+  font-size: 1.5em;/* フォントサイズ */
+  font-weight: bold;/* フォント太さ */
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+  position: relative;
+ 
+  color:#1e7aca;/* フォント色 */
+  }
+  
+  .news:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, #1e7aca 0%,rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  }
+
+details {
+  border: 1px solid #ccc;
+}
+details:not(:last-child) {
+  margin-bottom: 20px;
+}
+/**
+ * list-style: none; ←デフォルト三角削除（Chrome非対応）
+ * cursor: pointer; ←カーソルをポインターに
+**/
+details summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px;
+  background: #e4e4e4;
+  color: #242323;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/**
+ * Chrome用のデフォルト三角削除
+**/
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+
+details p {
+  margin: 0;
+  padding: 20px;
+}

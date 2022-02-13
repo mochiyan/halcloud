@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+div#wrap{
+  height:2800px;
+}
+.news{
+  font-size: 1.5em;/* フォントサイズ */
+  font-weight: bold;/* フォント太さ */
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+  position: relative;
+ font-family: 'Noto Serif JP', serif;
+  color:#1e7aca;/* フォント色 */
+  }
+  
+  .news:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, #1e7aca 0%,rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  }
+
+
+/* 検索ボタン*/
+.keyword{
+  height: 60px;
+}
+/*フォーム全体*/
+#form1{
+  position:relative;/*フォームの相対位置*/	
+  max-width:270px;/*フォームのサイズ*/
+  margin-bottom:15px;/*フォームの下に余白*/	 	
+  }
+
+
+
+
+/* ボタン*/
+.button {
+  width: 500px;
+  margin:  auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.button-header,
+.button p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+.button-container {
+
+  padding: 24px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.button p {
+  padding: 12px;
+}
+
+.button input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+
+.button input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.button input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+
+/* プロフィール */
+table#prof{
+  width: 800px;
+  margin: 10px auto 15px auto;
+  padding:0 0 20px 0 ; 
+  border-collapse: collapse;
+}
+  table#prof th ,
+  table#prof td{
+    padding: 7px;
+    vertical-align: middle;
+    border:1px solid #000;
+    font-family: 'Noto Serif JP', serif;
+  }
+  
+  table#prof th{
+	  position: relative;
+	  text-align: left;
+	  width: 25%;
+	  background-color: #52c2d0;
+	  color: white;
+	  text-align: center;
+	  padding: 10px 0;
+  }
+  
+
+  table#prof td#image{width: 200px;}
+  table#prof th#item{width: 150px;}
+  
+  table#prof td#image img {
+    /*画像の下に隙間が空いてしまう問題の解消*/
+    vertical-align: bottom;
+  }
+
+	.rate {
+	  position: relative;
+	  display: inline-block;
+	  width: 100px;
+	  height: 20px;
+	  font-size: 20px;
+	}
+	.rate:before, .rate:after {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  content: '★★★★★';
+	  display: inline-block;
+	  height: 20px;
+	  line-height: 20px;
+	}
+	.rate:before {
+	  color: #ddd; /*星色*/
+	}
+	.rate:after {
+	  color: #ffa500;
+	  overflow: hidden;
+	  white-space: nowrap; /*重要*/
+	}
+	
+	.rate00:after{width: 0;}
+	.rate05:after{width: 10px;}
+	.rate10:after{width: 20px;}
+	.rate15:after{width: 30px;}
+	.rate20:after{width: 40px;}
+	.rate25:after{width: 50px;}
+	.rate30:after{width: 60px;}
+	.rate35:after{width: 70px;}
+	.rate40:after{width: 80px;}
+	.rate45:after{width: 90px;}
+	.rate50:after{width: 100px;}
+	
+	h2{
+	font-family: 'Noto Serif JP', serif;
+	}
